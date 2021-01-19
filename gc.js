@@ -29,7 +29,7 @@ javascript:(function(){
 	const works = document.querySelectorAll('.d4Fe0d.LBlAUc');
 
 	window.addEventListener("keyup", function(event){
-	if (event.keyCode === 1) {
+	if (event.keyCode === 16) {
    	event.preventDefault();
 	for(var k = 0; k < document.getElementsByTagName('a'); k++){
    		document.getElementsByTagName('a')[k].style.color = "white";
