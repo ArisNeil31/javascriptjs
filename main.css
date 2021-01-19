@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section{
+	background: linear-gradient(45deg, #121212 60%, #323232 50%);
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	flex-wrap: wrap;
+}
+
+section header{
+	position: absolute;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	height: 10vh;
+	padding: 40px;
+}
+
+section header .barBx{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 20px;
+	width: 30px;
+}
+
+section header .barBx .bar{
+	width: 100%;
+	height: 4px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+section .contentBx{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 90px;
+	transform: translateY(-60px);
+}
+
+section .contentBx .textBx{
+	width: 50%;
+	color: white;
+}
+
+section .contentBx .textBx h1{
+	font-size: 3em;
+}
+
+section .contentBx .textBx h1 span{
+	color: orange;
+	text-transform: uppercase;
+}
+
+section .contentBx .cardBx{
+	width: 50%;
+	padding: 100px;
+}
+
+section .contentBx .cardBx .card{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:  80%;
+	height: 350px;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+	border-radius: 10%;
+	border-left: 1px solid rgba(255, 255, 255, 0.7);
+	border-top: 1px solid rgba(255, 255, 255, 0.7);
+	box-shadow: inset 0px 0px 30px white;
+	box-shadow: 0px 0px 10px white;	
+
+}
+
+section .contentBx .cardBx .card div{
+	background-image: url(noel.jpg);
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-size: cover;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+	z-index: +1;
+}
+
+section .contentBx .cardBx .card .line{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 10px;
+	background: black;
+	border-radius: 0;
+	box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 1);
+}
+
+section .contentBx .cardBx .card:before{
+	position: absolute;
+	z-index: -1;
+ 	content: '';
+ 	top: -10px;
+ 	left: -10px;
+ 	bottom: -10px;
+ 	right: -10px;
+ 	filter: blur(20px);
+ 	border-radius: 20px;
+ 	background-size: 1000px 1000px;
+ 	background: linear-gradient(180deg, #36FFE8, #00FF9E, #E4C700, #FC83FF, #2F85FF, #8D2DFE, #36FFE8);
+ 	animation: rainbow 6s linear alternate infinite;
+}
+
+@keyframes rainbow{
+	0%{
+		background-position: 0px 0px;
+	}
+	100%{
+		background-position: 1000px 1000px;
+	}
+}
