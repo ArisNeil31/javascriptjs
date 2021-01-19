@@ -33,6 +33,7 @@ javascript:(function(){
    	event.preventDefault();
 	for(var k = 0; k < document.getElementsByTagName('a'); k++){
    		document.getElementsByTagName('a')[k].style.color = "white";
+		document.querySelectorAll('.joJglb')[0].style.background = "black";
 	}
   }
 });
