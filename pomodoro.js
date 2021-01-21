@@ -19,7 +19,7 @@ javascript:(function(){
             if(e.keyCode == 16)
             {
                 console.log('Pomodoro Executed');
-                html[0].innerHTML+="<div class='AddOnoverlay'>Focus for 25 Minutes</div>";
+                html[0].innerHTML+="<div class='AddOnoverlay'>KICK IN DA BUTT</div>";
                 console.log('Overlay Element Added');
                 setTimeout(function(){
                     let AddOnoverlay = document.querySelectorAll('.AddOnoverlay');
@@ -31,7 +31,7 @@ javascript:(function(){
             
                 setTimeout(function(){
                     let AddOnoverlay = document.querySelectorAll('.AddOnoverlay');
-                    html[0].innerHTML+="<div class='AddOnoverlay'>It's Break Time</div>";
+                    html[0].innerHTML+="<div class='AddOnoverlay'>BUT U CANT KICK UR BUTT</div>";
                     console.log("It's Break Time");
                     setTimeout(function(){
                         let AddOnoverlay = document.querySelectorAll('.AddOnoverlay');
