@@ -8,12 +8,24 @@
 }
 
 section{
-	background: linear-gradient(45deg, #121212 60%, #323232 50%);
+	background: linear-gradient(45deg, #121212 60%, #222222 50%);
 	display: flex;
 	position: relative;
 	width: 100%;
 	height: 100vh;
 	flex-wrap: wrap;
+	animation: bgchange 1s ease-in-out;
+	background-size: 400%;
+	background-position: -4000px -4000px;
+}
+
+@keyframes bgchange{
+	0%{
+		background-position: 0px 0px;
+	}
+	100%{
+		background-position: -4000px -4000px;
+	}
 }
 
 section header{
@@ -55,6 +67,28 @@ section .contentBx{
 section .contentBx .textBx{
 	width: 50%;
 	color: white;
+	animation: AddRight 1s ease-in-out;
+}
+
+@keyframes AddRight{
+	0%{
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes AddLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);	
+	}
 }
 
 section .contentBx .textBx h1{
@@ -64,11 +98,25 @@ section .contentBx .textBx h1{
 section .contentBx .textBx h1 span{
 	color: orange;
 	text-transform: uppercase;
+	animation: colorchange 2s ease-in-out;
+}
+
+@keyframes colorchange{
+	0%{
+		color: white;
+	}
+	85%{
+		color: white;
+	}
+	100%{
+		color: orange;
+	}
 }
 
 section .contentBx .cardBx{
 	width: 50%;
 	padding: 100px;
+	animation: AddLeft 1s ease-in-out;
 }
 
 section .contentBx .cardBx .card{
@@ -84,6 +132,7 @@ section .contentBx .cardBx .card{
 	border-top: 1px solid rgba(255, 255, 255, 0.7);
 	box-shadow: inset 0px 0px 30px white;
 	box-shadow: 0px 0px 10px white;	
+	opacity: 1;
 
 }
 
@@ -117,11 +166,11 @@ section .contentBx .cardBx .card:before{
  	left: -10px;
  	bottom: -10px;
  	right: -10px;
- 	filter: blur(20px);
- 	border-radius: 20px;
+ 	border-radius: 30px;
  	background-size: 1000px 1000px;
  	background: linear-gradient(180deg, #36FFE8, #00FF9E, #E4C700, #FC83FF, #2F85FF, #8D2DFE, #36FFE8);
  	animation: rainbow 6s linear alternate infinite;
+ 	opacity: 1;
 }
 
 @keyframes rainbow{
